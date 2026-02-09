@@ -28,8 +28,8 @@ body::after {
     z-index: -1;
 
     background-image:
-        linear-gradient(to right, #033854, #126171, #288d8a, #45a994, #69c5a0, #94e1b4, #c5fdd3, transparent 1px),
-        linear-gradient(to bottom, #033854, #126171, #288d8a, #45a994, #69c5a0, #94e1b4, #c5fdd3, transparent 1px);
+        linear-gradient(to right, #033854, #126171, #288d8a, #45a994, #69c5a0, #94e1b4, #c5fdd3, transparent 2px),
+        linear-gradient(to bottom, #033854, #126171, #288d8a, #45a994, #69c5a0, #94e1b4, #c5fdd3, transparent 2px);
 
     background-size: 15px 15px;
     background-repeat: repeat;
@@ -51,8 +51,8 @@ body::before {
 
     background-image:
         radial-gradient(circle at var(--mouse-x) var(--mouse-y), #45a99384, transparent 100%),
-        linear-gradient(to right, #033854, #126171, #288d8a, #45a994, #69c5a0, #94e1b4, #c5fdd3, transparent 3px),
-        linear-gradient(to bottom, #033854, #126171, #288d8a, #45a994, #69c5a0, #94e1b4, #c5fdd3, transparent 3px);
+        linear-gradient(to right, #033854, #126171, #288d8a, #45a994, #69c5a0, #94e1b4, #c5fdd3, transparent 5px),
+        linear-gradient(to bottom, #033854, #126171, #288d8a, #45a994, #69c5a0, #94e1b4, #c5fdd3, transparent 5px);
 
     background-size:
         cover,
@@ -96,7 +96,7 @@ div.nav-item-container {
 .nav-item-container div {
     border-radius: 8px;
     margin: 0 8px;
-    padding: 8px;
+    padding: 16px;
     font-weight: bolder;
     color: white;
     transition: background-color ease-in-out 0.3s;
