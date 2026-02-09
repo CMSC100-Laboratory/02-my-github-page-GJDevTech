@@ -8,14 +8,13 @@ body {
     display: flex;
     flex-direction: column;
 
-    --mouse-x: 50%;
-    --mouse-y: 50%;
-    --mouse-x-grid: 50%;
-    --mouse-y-grid: 50%;
+    --mouse-x: 0%;
+    --mouse-y: 0%;
+    --mouse-x-grid: 0%;
+    --mouse-y-grid: 0%;
     --radius: 96px;
 
     background-image: 
-        radial-gradient(circle at var(--mouse-x) var(--mouse-y), #45a99384, transparent 10%),
         linear-gradient(#c5fdd3, #94e1b4, #69c5a0, #45a994, #288d8a, #126171, #033854);
 
     font-family: Helvetica;
@@ -51,12 +50,19 @@ body::before {
     z-index: -1;
 
     background-image:
+        radial-gradient(circle at var(--mouse-x) var(--mouse-y), #45a99384, transparent 100%),
         linear-gradient(to right, #033854, #126171, #288d8a, #45a994, #69c5a0, #94e1b4, #c5fdd3, transparent 3px),
         linear-gradient(to bottom, #033854, #126171, #288d8a, #45a994, #69c5a0, #94e1b4, #c5fdd3, transparent 3px);
 
-    background-size: 15px 15px;
+    background-size:
+        cover,
+        15px 15px,
+        15px 15px;
 
-    background-repeat: repeat;
+    background-repeat:
+        no-repeat,
+        repeat,
+        repeat;
 
     mask-image: radial-gradient(
         circle var(--radius) at var(--mouse-x-grid) var(--mouse-y-grid),
