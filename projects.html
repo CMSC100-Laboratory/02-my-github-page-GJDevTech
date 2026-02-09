@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>Portfolio</title>
+        <title>Projects</title>
         <link rel="icon" type="image/png" href="images/logo.png">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
@@ -26,22 +26,18 @@
             <div class="nav-bar">
                 <a href="index.html"><img src="images/logo.png" id="logo"></a>
                 <div class="nav-item-container">
+                    <button onclick="window.location.href='index.html'">Home</button>
                     <button onclick="window.location.href='about.html'">About</button>
-                    <button onclick="window.location.href='projects.html'">Projects</button>
                 </div>
             </div>
         </header>
 
         <div class="card-view">
-            <h1>Gerizim Josh Colosaga</h1>
-            <h3>Professional bug creator (also fixes them… eventually).</h3>
-            <p>I'm an aspiring software engineer currently taking BS Computer Science at the University of the Philippines.
-                <br> My interest in programming started during the pandemic where I started with game development, after a while I transitioned to general programming projects.
-            </p>
+            <h1>Projects</h1>
+            <h3>Experiments that survived debugging.</h3>
         </div>
 
-        <div class="card-view" id="recent-projects">
-            <h2>Recent Projects</h2>
+        <div class="card-view" id="all-projects">
             <div class="projects-container">
                 <div class="project-card">
                     <img src="images/manggareader.jpg" id="project-preview">
@@ -67,7 +63,6 @@
                     </p>
                 </div>
             </div>
-            <button onclick="window.location.href='projects.html'">View All Projects</button>
         </div>
     </body>
 </html>

@@ -93,17 +93,55 @@ div.nav-item-container {
     justify-content: space-between;
 }
 
-.nav-item-container div {
+div.projects-container {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+div.project-card {
+    margin: 8px;
+    width: 30%;
+    border-radius: 16px;
+    padding: 16px;
+    background-color: #c5fdd372;
+    flex-direction: column;
+    align-items: center;
+    transition: transform ease-in-out 0.3s;
+}
+
+div.project-card:hover {
+    transform: translateY(-15px);
+}
+
+div.skill-container {
+    margin: 16px;
+    justify-content: space-between;
+}
+
+div.skill {
+    font-weight: bolder;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: black;
+    border-radius: 8px;
+    background-color: white;
+    padding: 8px;
+}
+
+button {
+    border: none;
     border-radius: 8px;
     margin: 0 8px;
     padding: 16px;
     font-weight: bolder;
     color: white;
+    background-color: transparent;
     transition: background-color ease-in-out 0.3s;
     cursor: pointer;
 }
 
-.nav-item-container div:hover {
+button:hover {
     background-color: #c5fdd351;
 }
 
@@ -122,21 +160,49 @@ img#logo:hover {
 
 }
 
+img#project-preview {
+    border-radius: 8px;
+    height: auto;
+    width: 95%;
+    transition: transform ease-in-out 0.3s;
+}
+
+img#project-preview:hover {
+    transform: scale(1.1);
+}
+
+img.icon{
+    margin: 4px;
+    height: 32px;
+    width: auto;
+}
+
 .card-view {
     flex-direction: column;
     padding: 8px;
     border-radius: 8px;
-    background-color: #03385434;
-    margin: 16px;
+    background-color: #03385451;
+    color: white;
+    margin: 32px;
     transition: background-color ease-in-out 0.3s,
-                color ease-in-out 0.5s;
+                color ease-in-out 0.5s,
+                transform ease-in-out 0.3s;
 }
 
 .card-view:hover {
-    color: #ffffff;
     background-color: #033854da;
+    transform: scale(1.0125);
 }
 
 .card-view h1, h3 {
     margin: 8px;
+}
+
+.card-view#recent-projects {
+    text-align: center;
+}
+
+.card-view#all-projects {
+    padding: 24px;
+    text-align: center;
 }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>About</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+        <script>
+            document.addEventListener("mousemove", e => {
+            document.body.style.setProperty("--mouse-x-grid", `${e.clientX}px`);
+            document.body.style.setProperty("--mouse-y-grid", `${e.clientY}px`);
+
+            const x = (e.pageX / document.documentElement.scrollWidth) * 100;
+            const y = (e.pageY / document.documentElement.scrollHeight) * 100;
+
+            document.body.style.setProperty("--mouse-x", `${x}%`);
+            document.body.style.setProperty("--mouse-y", `${y}%`);
+        });
+        </script>
+
+        <header>
+            <div class="nav-bar">
+                <a href="index.html"><img src="images/logo.png" id="logo"></a>
+                <div class="nav-item-container">
+                    <button onclick="window.location.href='index.html'">Home</button>
+                    <button onclick="window.location.href='projects.html'">Projects</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="card-view">
+            <h1>About Me</h1>
+            <h3>Let's dive deeper</h3>
+            <p>I’m an aspiring software engineer currently pursuing a Bachelor of Science in Computer Science at the University of the Philippines.<br>
+            My interest in programming began during the pandemic, when I first explored game development as a creative outlet and a way to understand how software systems work. Through building small games and experimenting with game mechanics, I developed a strong foundation in problem-solving and logical thinking.
+            <br><br>Over time, my curiosity expanded beyond games, leading me to transition into general programming projects. I began focusing on writing cleaner, more efficient code and exploring areas such as algorithms, data structures, and system design. This shift helped me discover a deeper appreciation for software engineering as a discipline, motivating me to continuously learn and take on more complex technical challenges.</p>
+        </div>
+
+        <div class="card-view">
+            <h1>Skills</h1>
+            <p>As an aspiring software engineer, I specialize in making mobile applications and database systems. I'm also expanding my skill into web programming</p>
+
+            <div class="skill-container">
+                <div class="skill"><img src="images/csharp_logo.png" class="icon"> C#</div>
+                <div class="skill"><img src="images/c_logo.png" class="icon"> C</div>
+                <div class="skill"><img src="images/python_logo.png" class="icon"> Python</div>
+                <div class="skill"><img src="images/java_log.webp" class="icon"> Java</div>
+                <div class="skill"><img src="images/html_logo.png" class="icon"> HTML</div>
+                <div class="skill"><img src="images/css_logo.png" class="icon"> CSS</div>
+                <div class="skill"><img src="images/js_logo.png" class="icon"> JavaScript</div>
+                <div class="skill"><img src="images/git_logo.png" class="icon"> Git</div>
+                <div class="skill"><img src="images/github_logo.png" class="icon"> GitHub</div>
+            </div>
+        </div>
+    </body>
+</html>
