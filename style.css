@@ -115,7 +115,7 @@ div.project-card:hover {
 
 div.skill-container {
     margin: 16px;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 div.skill {
@@ -128,6 +128,11 @@ div.skill {
     background-color: white;
     padding: 8px;
     margin: 8px;
+    transition: transform ease-in-out 0.3s;
+}
+
+div.skill:hover {
+    transform: translateY(-8px);
 }
 
 button {
@@ -169,7 +174,7 @@ img#project-preview {
 }
 
 img#project-preview:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 img.icon{
