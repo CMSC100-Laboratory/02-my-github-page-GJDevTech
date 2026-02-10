@@ -2,11 +2,14 @@ body, html {
     margin: 0;
     padding: 0;
     min-height: 100vh;
+    overscroll-behavior: none;
 }
 
 body {
     display: flex;
     flex-direction: column;
+
+    padding-bottom: 24px;
 
     --mouse-x: 0%;
     --mouse-y: 0%;
@@ -95,14 +98,14 @@ div.nav-item-container {
 
 div.projects-container {
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 div.project-card {
-    margin: 8px;
+    margin: 8px 8px 16px 8px;
     width: 30%;
     border-radius: 16px;
-    padding: 16px;
+    padding: 8px;
     background-color: #c5fdd372;
     flex-direction: column;
     align-items: center;
@@ -110,7 +113,7 @@ div.project-card {
 }
 
 div.project-card:hover {
-    transform: translateY(-15px);
+    transform: translateY(-8px);
 }
 
 div.skill-container {
@@ -133,6 +136,17 @@ div.skill {
 
 div.skill:hover {
     transform: translateY(-8px);
+}
+
+div.image-container {
+    border-radius: 8px;
+    width: 95%;
+    height: 200px;
+    overflow-y: auto;
+}
+
+div.image-container::-webkit-scrollbar {
+    display: none;
 }
 
 button {
@@ -168,13 +182,8 @@ img#logo:hover {
 
 img#project-preview {
     border-radius: 8px;
-    height: auto;
-    width: 95%;
-    transition: transform ease-in-out 0.3s;
-}
-
-img#project-preview:hover {
-    transform: scale(1.05);
+    height: max-content;
+    width: 100%;
 }
 
 img.icon{
@@ -189,7 +198,7 @@ img.icon{
     border-radius: 8px;
     background-color: #03385451;
     color: white;
-    margin: 32px;
+    margin: 32px 32px 8px 32px;
     transition: background-color ease-in-out 0.3s,
                 color ease-in-out 0.5s,
                 transform ease-in-out 0.3s;
