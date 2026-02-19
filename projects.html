@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Projects</title>
+        <link rel="icon" type="image/png" href="images/logo.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+        <script>
+            document.addEventListener("mousemove", e => {
+            document.body.style.setProperty("--mouse-x-grid", `${e.clientX}px`);
+            document.body.style.setProperty("--mouse-y-grid", `${e.clientY}px`);
+
+            const x = (e.pageX / document.documentElement.scrollWidth) * 100;
+            const y = (e.pageY / document.documentElement.scrollHeight) * 100;
+
+            document.body.style.setProperty("--mouse-x", `${x}%`);
+            document.body.style.setProperty("--mouse-y", `${y}%`);
+        });
+        </script>
+
+        <header>
+            <div class="nav-bar">
+                <a href="index.html"><img src="images/logo.png" id="logo"></a>
+                <div class="nav-item-container">
+                    <button onclick="window.location.href='index.html'">Home</button>
+                    <button onclick="window.location.href='about.html'">About</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="card-view">
+            <h1>Projects</h1>
+            <h3>Experiments that survived debugging.</h3>
+            <p>Most of the projects here were made for my personal learning. Making these projects help me learn more about programming, designing systems, and solving problems.</p>
+        </div>
+
+        <div class="card-view" id="all-projects">
+            <h2>All Projects</h2>
+            <div class="projects-container">
+                <div class="project-card">
+                    <div class="image-container">
+                        <img src="images/manggareader.jpg" id="project-preview">
+                    </div>
+                    <h3>ManggaReader</h3>
+                    <b>Personal Project: Completed (with continous updates)</b>
+                    <p>
+                        A mobile application for reading, and discovering manga. It was made to accommodate my need for reading manga.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <div class="image-container">
+                        <img src="images/asoming_01.png" id="project-preview">
+                    </div>
+                    <h3>AsoMing Cafe</h3>
+                    <b>School Project: Completed</b>
+                    <p>
+                        A Java application created for CMSC 22. It simulates the management, and ordering in a cafe. It was a group project created by me, Aldrin, Julian, and Sean.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <div class="image-container">
+                        <img src="images/learnify_01.jpg" id="project-preview">
+                    </div>
+                    <h3>Learnify</h3>
+                    <b>School Project: Completed</b>
+                    <p>
+                        A mobile application which was my research project during senior high school. It was made for students to promote self-paced learning, enabling them to either catch-up or advance in their lessons.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>LearnifyLabs</h3>
+                    <b>School Project: Completed</b>
+                    <p>
+                        A mobile application used together with Learnify to add, edit, and remove lessons.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Learnify Database</h3>
+                    <b>School Project: Completed</b>
+                    <p>
+                        A database I created with google sheets and google script API I setup for accessing the google sheets. The database is used to store the lessons for Learnify. I used google sheets because of monetary limitation.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <div class="image-container">
+                        <img src="images/cmsc_150.png" id="project-preview">
+                    </div>
+                    <h3>CMSC 150 Project</h3>
+                    <b>School Project: Completed</b>
+                    <p>
+                        Final project for CMSC 150 that calculates the optimal number of projects for pollution reduction.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <div class="image-container">
+                        <img src="images/gjcash.png" id="project-preview">
+                    </div>
+                    <h3>GJCash</h3>
+                    <b>Personal Project: Completed</b>
+                    <p>
+                        A mobile application that is used to track allowance.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <div class="image-container">
+                        <img src="images/terrain_generation.png" id="project-preview">
+                    </div>
+                    <h3>Terrain Generation System</h3>
+                    <b>Personal Project: Ongoing</b>
+                    <p>
+                        A system for generating terrain for game I plan on making.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Songbook Database</h3>
+                    <b>Personal Project: Ongoing</b>
+                    <p>
+                        A database to store song titles, artists, and tags for filtering the type of song. It will be connected to a mobile application to access it. The mobile application will be used to add, edit, and remove songs.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Gerish Interpreter</h3>
+                    <b>Personal Project: Ongoing</b>
+                    <p>
+                        An interpreter for a programming language I am designing. This project is purely for my learning purposes not intended for production.
+                    </p>
+                    <a href="https://github.com/GJDevTech/gerish-interpreter.git">Repository Link</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
